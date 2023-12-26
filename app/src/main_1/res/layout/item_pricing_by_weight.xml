@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_3"
+    android:layout_marginTop="@dimen/dp_5"
+    android:background="@drawable/draw_price_kg_card"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amount"
+        style="@style/font_18_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:text="100"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/typeAmount"
+        style="@style/font_18_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:text="1000"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type"
+        style="@style/font_18_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:text="Gm."
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

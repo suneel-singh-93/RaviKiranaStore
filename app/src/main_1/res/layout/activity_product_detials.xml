@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        tools:context=".ProductDetialsActivity"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+            android:id="@+id/kgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/cardBg"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@drawable/draw_card_bg_"
+                android:elevation="@dimen/dp_15"
+                android:shadowColor="@color/blue_primary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:background="@drawable/draw_card_bg"
+                android:elevation="@dimen/dp_10">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    app:srcCompat="@drawable/default_img" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/productName"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v1"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/productImage"
+                    android:lines="1"
+                    android:text="Sugar"
+                    android:textColor="@color/black_tex"
+                    android:textSize="@dimen/sp_25" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/productBasePrice"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_toEndOf="@+id/productImage"
+                    android:text="100 Rs."
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/baseType"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Kg / Gm"
+                    android:textSize="@dimen/sp_22" />
+
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_2"
+                    android:layout_below="@+id/productImage"
+                    android:background="@color/blue_primary" />
+
+                <View
+                    android:id="@+id/centerView"
+                    android:layout_width="2dp"
+                    android:layout_height="400dp"
+                    android:layout_below="@+id/v2"
+                    android:layout_centerInParent="true" />
+
+                <!--Right side of centerView-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBasePriceType"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v2"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toEndOf="@+id/centerView"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Rs."
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBaseType"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Kg / Gm"
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/priceListRCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvBasePriceType"
+                    android:layout_toEndOf="@id/centerView"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_pricing_by_weight" />
+                <!--Left side of centerView-->
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/typeConversKg"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Enter Rupees :"
+                    android:textSize="@dimen/sp_14" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txRs"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_below="@id/typeConversKg"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_4"
+                    android:text="Rs."
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPrice"
+                    style="@style/font_18_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_below="@+id/typeConversKg"
+                    android:layout_alignTop="@+id/txRs"
+                    android:layout_alignBottom="@+id/txRs"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_toStartOf="@+id/centerView"
+                    android:layout_toEndOf="@+id/txRs"
+                    android:background="@drawable/draw_edit_price"
+                    android:hint="1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weightResult"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etPrice"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_4"
+                    android:text="" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txKg"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_below="@id/weightResult"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_toStartOf="@+id/centerView"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_2"
+                    android:text="Kg/gm."
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/div1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_below="@+id/weightResult"
+                    android:layout_alignTop="@+id/txRs"
+                    android:layout_alignBottom="@+id/txRs"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toStartOf="@+id/centerView"
+                    android:background="@color/black_tex" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/weightConvert"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Enter Weight :"
+                    android:textSize="@dimen/sp_14" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etWeightEnter"
+                    style="@style/font_18_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_below="@+id/weightConvert"
+                    android:layout_alignTop="@+id/txKg"
+                    android:layout_alignEnd="@+id/centerView"
+                    android:layout_alignBottom="@+id/txKg"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toEndOf="@+id/txRs"
+                    android:background="@drawable/draw_edit_price"
+                    android:hint="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:paddingHorizontal="@dimen/dp_10" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceResult"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etWeightEnter"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_4"
+                    android:text=""
+                    android:textColor="@color/green_primary" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/pktView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/cardBg_"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:background="@drawable/draw_card_bg_"
+                android:elevation="@dimen/dp_15"
+                android:shadowColor="@color/blue_primary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:background="@drawable/draw_card_bg"
+                android:elevation="@dimen/dp_10">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/productImage1"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    app:srcCompat="@drawable/default_img" />
+
+                <View
+                    android:id="@+id/v1_"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/productName1"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v1_"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-10dp"
+                    android:layout_toEndOf="@+id/productImage1"
+                    android:text="Sugar"
+                    android:textColor="@color/black_tex"
+                    android:textSize="@dimen/sp_25" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/productBasePrice1"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName1"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_toEndOf="@+id/productImage1"
+                    android:text="100 Rs."
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/baseType1"
+                    style="@style/font_18_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/productName1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:text="Kg / Gm"
+                    android:textSize="@dimen/sp_22" />
+
+                <View
+                    android:id="@+id/v2_"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_2"
+                    android:layout_below="@+id/productImage1"
+                    android:background="@color/blue_primary" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

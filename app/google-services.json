@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "749886931888",
+    "project_id": "ravikiranastore-53446",
+    "storage_bucket": "ravikiranastore-53446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749886931888:android:b3e61eaae5c2ba64630c75",
+        "android_client_info": {
+          "package_name": "com.timeparadox.ravikiranastore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749886931888-7a4geng6c0po0d71djqr33ggmm3u2bmg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeparadox.ravikiranastore",
+            "certificate_hash": "861f768cbb76916df4ef43ed26eea6032832b1f1"
+          }
+        },
+        {
+          "client_id": "749886931888-r1g4u41o6bnkqp3ic2lqk2napto96vcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkHX5h3l3YnY47KICjeYKjsrMdV_DWe44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749886931888-r1g4u41o6bnkqp3ic2lqk2napto96vcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

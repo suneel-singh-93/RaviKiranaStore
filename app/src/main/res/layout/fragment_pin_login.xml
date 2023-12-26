@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_white_top_round"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        tools:context=".ui.bottomSheet.TimeScheduleFragment">
+
+        <View
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_2"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/line_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/memduim_16_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:text="@string/enter_pin_code" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/line_color" />
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint=""
+            app:inputType="text"
+            app:password="true"
+            app:pinBackground="@drawable/drawable_pin"
+            app:pinHeight="@dimen/dp_48"
+            app:pinLength="4"
+            app:pinWidth="@dimen/dp_48"
+            app:textSize="@dimen/sp_16"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/line_color" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/wrongPin"
+                style="@style/memduim_16_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Pin is not correct"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/submit"
+            style="@style/semi_b_16_whit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/draw_blue_btn_8_curv_fill"
+            android:gravity="center"
+            android:text="@string/submit" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

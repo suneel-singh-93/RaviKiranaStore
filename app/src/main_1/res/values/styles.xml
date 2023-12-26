@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="font_18_head">
+        <item name="android:textColor">@color/bg_color</item>
+        <item name="android:fontFamily">@font/opensans_extrabold</item>
+        <item name="android:textSize">@dimen/header_18</item>
+    </style>
+ <style name="font_18_blue">
+        <item name="android:textColor">@color/blue_primary</item>
+        <item name="android:fontFamily">@font/opensans_extrabold</item>
+        <item name="android:textSize">@dimen/header_18</item>
+    </style>
+<style name="font_14_black">
+        <item name="android:textColor">@color/black_tex</item>
+        <item name="android:fontFamily">@font/opensans_extrabold</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+<style name="font_11_bold">
+        <item name="android:textColor">@color/gold_3</item>
+        <item name="android:fontFamily">@font/opensans_extrabold</item>
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+<style name="font_10_bold">
+        <item name="android:textColor">@color/green_primary</item>
+        <item name="android:fontFamily">@font/opensans_extrabold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="memduim_14_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <style name="memduim_12_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="medium_12_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="memduim_14_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <style name="toolBar_title">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="m_10_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+     <style name="regular_16_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+     <style name="medium_16_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+<style name="medium_8_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+<style name="medium_10_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+  <style name="semi_b_12_blue">
+        <item name="android:textColor">@color/blue_primary</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="semi_10_">
+        <item name="android:textColor">@color/green_primary</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+     <style name="semi_b_8_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/dp_8</item>
+    </style>
+     <style name="semi_b_16_blue">
+        <item name="android:textColor">@color/blue_primary</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="semi_b_16_whit">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+ <style name="medium_blue_14_blue">
+        <item name="android:textColor">@color/blue_primary</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <style name="s_8_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+    <style name="MyEditTextThemeCu">
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#000000</item>
+        <item name="colorControlHighlight">#000000</item>
+    </style>
+
+    <style name="s_10_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="reguler_b_11_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+ <style name="reguler_b_12_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+<style name="regular_10_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="semi_b_12_gren">
+        <item name="android:textColor">@color/green_primary</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+     <style name="semi_b_12_red">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="me8_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+   <style name="r8_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_8</item>
+    </style>
+
+ <style name="memduim_20_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="memduim_16_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="memduim_16_gray">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+
+    <style name="memduim_18_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="semi_16">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!--themes and style-->
+
+   <!-- <style name="Theme.Rating" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/yellow</item>
+    </style>
+
+    <style name="CustomProgressBarTheme">
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+
+    <style name="yellowRating" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:progressBackgroundTint">@color/gray_text</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_gray_rating</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    &lt;!&ndash;Bottom sheet style and layout &ndash;&gt;
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+
+    <style name="RadioButtonTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlActivated">@color/blue_primary</item>
+        <item name="colorControlNormal">@color/gray_text</item>
+    </style>
+
+-->
+    <style name="r_6_gry">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_6</item>
+    </style>
+
+    <!--end-->
+
+
+    <!--shapes   app:shapeAppearance="@style/shape_radius_16"-->
+
+    <style name="shapeCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="semi_14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/quicksand_semi_bold</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+     <style name="shape_radius_16">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+    <!--end-->
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#56C1FF</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+
+</resources>
